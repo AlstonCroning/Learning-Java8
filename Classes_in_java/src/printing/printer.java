@@ -8,8 +8,21 @@ public class printer {
     public boolean isOn;
     public String modelNumber;
 
-    public void print(){
-        System.out.println(modelNumber);
+    //method 'print'
+    public void print()
+    {
+        System.out.println(modelNumber);//print the modelNumber
+    }
+
+    //method 'print' overloading
+    public void print(String text)
+    {
+        System.out.println(text);//print the text
+    }
+
+    public String getModelNumber()
+    {
+        return modelNumber;
     }
 
 }

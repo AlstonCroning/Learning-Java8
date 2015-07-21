@@ -19,10 +19,14 @@ public class HelloWorld {
         yourPrinter.isOn = true;
         yourPrinter.modelNumber = "FGH";
 
-//        System.out.println("hello World");
-//        System.out.println("myPrinter model is: " + myPrinter.modelNumber);
-//        System.out.println("yourPrinter model is: " + yourPrinter.modelNumber);
+        //System.out.println("hello World");
+        //System.out.println("myPrinter model is: " + myPrinter.modelNumber);
+        //System.out.println("yourPrinter model is: " + yourPrinter.modelNumber);
 
-        myPrinter.print();
+        //calling the print method
+        //myPrinter.print("Hello Paramiter");
+
+        String theModelNumber = myPrinter.getModelNumber();
+        System.out.println(theModelNumber);
     }
 }
