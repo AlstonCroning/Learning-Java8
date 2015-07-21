@@ -7,4 +7,9 @@ public class printer {
 
     public boolean isOn;
     public String modelNumber;
+
+    public void print(){
+        System.out.println(modelNumber);
+    }
+
 }
