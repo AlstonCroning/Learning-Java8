@@ -22,7 +22,7 @@ public class printer {
 
     public String getModelNumber()
     {
-        return modelNumber;
+        return modelNumber;//return value
     }
 
 }
