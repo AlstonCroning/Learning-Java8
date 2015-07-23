@@ -5,8 +5,10 @@ package printing;
  */
 public class printer {
 
-    public boolean isOn;
-    public String modelNumber;
+
+    //using access modifiers
+    private boolean isOn;
+    private String modelNumber;
 
     //printer Constructor (not default)
     public printer(boolean isOn,String modelNumber){
@@ -20,10 +22,11 @@ public class printer {
     {
         System.out.println(isOn);//print boolean value
         System.out.println(modelNumber);//print the modelNumber
+        print("I can call this!");
     }
 
     //method 'print' overloading
-    public void print(String text)
+    private void print(String text)
     {
         System.out.println(text);//print the text
     }

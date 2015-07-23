@@ -12,9 +12,8 @@ public class HelloWorld {
     public static void main(String[] args)
     {
         printer myPrinter = new printer(true,"MY PRINTER");
+
         myPrinter.print();
 
-        printer yourPrinter = new printer(false,"YOUR PRINTER");
-        yourPrinter.print();
     }
 }
