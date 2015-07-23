@@ -1,5 +1,6 @@
 package greetings;
 
+import javafx.print.Printer;
 import printing.printer;//import statement for the printer
 
 
@@ -10,23 +11,10 @@ public class HelloWorld {
 
     public static void main(String[] args)
     {
-        //creating a new instance
-        printer myPrinter = new printer();//using type printer
-        myPrinter.isOn = false;
-        myPrinter.modelNumber = "ABCD";
+        printer myPrinter = new printer(true,"MY PRINTER");
+        myPrinter.print();
 
-        printer yourPrinter = new printer();
-        yourPrinter.isOn = true;
-        yourPrinter.modelNumber = "FGH";
-
-        //System.out.println("hello World");
-        //System.out.println("myPrinter model is: " + myPrinter.modelNumber);
-        //System.out.println("yourPrinter model is: " + yourPrinter.modelNumber);
-
-        //calling the print method
-        //myPrinter.print("Hello Paramiter");
-
-        String theModelNumber = myPrinter.getModelNumber();
-        System.out.println(theModelNumber);
+        printer yourPrinter = new printer(false,"YOUR PRINTER");
+        yourPrinter.print();
     }
 }
