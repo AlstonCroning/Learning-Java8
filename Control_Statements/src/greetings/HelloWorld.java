@@ -11,10 +11,10 @@ public class HelloWorld {
 
     public static void main(String[] args)
     {
-        printer myPrinter = new printer(false,"MY PRINTER");
+        printer myPrinter = new printer(true,"MY PRINTER");
 
-        //myPrinter.print(2);
-        myPrinter.printColors();
+        myPrinter.print(2);
+        //myPrinter.printColors();
 
     }
 }

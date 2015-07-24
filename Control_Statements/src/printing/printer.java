@@ -17,7 +17,7 @@ public class printer {
         this.modelNumber = modelNumber;
     }
 
-    //method 'print'
+    //method 'print' copies
     public void print(int copies)
     {
         String onStatus = "";
@@ -29,13 +29,15 @@ public class printer {
 
         String textToPrint = modelNumber + onStatus;
 
-        //using for loops
-        for (int i = 0; i < copies; i++)
+        //using while loop
+        while(copies > 0)
         {
             System.out.println(textToPrint);
+            copies--;
         }
     }
 
+    //method print color names of an array using 'for each loop' construct
     public void printColors(){
         String[] colors = new String[] {"red", "blue", "green"};
 
@@ -47,7 +49,7 @@ public class printer {
 
     }
 
-    //method 'print' overloading
+    //method 'print' text
     private void print(String text)
     {
         System.out.println(text);//print the text
