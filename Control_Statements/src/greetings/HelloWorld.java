@@ -13,7 +13,8 @@ public class HelloWorld {
     {
         printer myPrinter = new printer(false,"MY PRINTER");
 
-        myPrinter.print(2);
+        //myPrinter.print(2);
+        myPrinter.printColors();
 
     }
 }

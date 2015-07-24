@@ -36,6 +36,17 @@ public class printer {
         }
     }
 
+    public void printColors(){
+        String[] colors = new String[] {"red", "blue", "green"};
+
+        //using the 'for each' loop construct
+        //both 'for loop' and 'for each loop' have the same keywords except the parameters
+        for(String currentColor : colors){
+            System.out.println(currentColor);
+        }
+
+    }
+
     //method 'print' overloading
     private void print(String text)
     {
