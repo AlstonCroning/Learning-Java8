@@ -20,16 +20,19 @@ public class printer {
     //method 'print'
     public void print(int copies)
     {
+        String onStatus = "";
+
+        if(isOn)
+            onStatus = " is on";
+        else
+            onStatus = " is off";
+
+        String textToPrint = modelNumber + onStatus;
+
+        //using for loops
         for (int i = 0; i < copies; i++)
         {
-            if(isOn)
-            {
-                System.out.println(modelNumber + " is on!");
-            }
-            else
-            {
-                System.out.println(modelNumber + " is off!");
-            }
+            System.out.println(textToPrint);
         }
     }
 
