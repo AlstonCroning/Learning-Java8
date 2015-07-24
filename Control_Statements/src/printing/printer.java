@@ -20,46 +20,17 @@ public class printer {
     //method 'print'
     public void print(int copies)
     {
-        //System.out.println(isOn);//print boolean value
-        //System.out.println(modelNumber);//print the modelNumber
-        //print("I can call this!");
-
-        switch (copies)
+        for (int i = 0; i < copies; i++)
         {
-            case 0 :
-
-                break;
-            case 1 :
-            case 5 :
-                if(isOn)
-                {
-                    System.out.println(modelNumber + " is on!");
-                }
-                else
-                {
-                    System.out.println(modelNumber + " is off!");
-                }
-                break;
-
-            case 2 :
-                if(isOn)
-                {
-                    System.out.println(modelNumber + " is on!");
-                    System.out.println(modelNumber + " is on!");
-                }
-                else
-                {
-                    System.out.println(modelNumber + " is off!");
-                    System.out.println(modelNumber + " is off!");
-                }
-                break;
-
-            default:
-                System.out.println("Number of copies is not supported");
-
+            if(isOn)
+            {
+                System.out.println(modelNumber + " is on!");
+            }
+            else
+            {
+                System.out.println(modelNumber + " is off!");
+            }
         }
-
-
     }
 
     //method 'print' overloading
