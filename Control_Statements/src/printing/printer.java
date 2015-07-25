@@ -17,7 +17,7 @@ public class printer {
         this.modelNumber = modelNumber;
     }
 
-    //method 'print' copies
+    //prints copies
     public void print(int copies)
     {
         String onStatus = "";
@@ -37,24 +37,30 @@ public class printer {
         }
     }
 
-    //method print color names of an array using 'for each loop' construct
-    public void printColors(){
-        String[] colors = new String[] {"red", "blue", "green"};
+    //prints color names of an array
+    public void printColors()
+    {
+        //colors array
+        String[] colors = new String[] {"red", "blue", "green","yellow","orange"};
 
         //using the 'for each' loop construct
-        //both 'for loop' and 'for each loop' have the same keywords except the parameters
         for(String currentColor : colors){
+
+            if("green".equals(currentColor))
+                continue;
+                //break;
             System.out.println(currentColor);
         }
 
     }
 
-    //method 'print' text
+    //prints text
     private void print(String text)
     {
         System.out.println(text);//print the text
     }
 
+    //return modelNumber
     public String getModelNumber()
     {
         return modelNumber;//return value
