@@ -3,17 +3,15 @@ package printing;
 /**
  * Created by Dishan Croning on 7/21/2015.
  */
-public class printer {
+public class printer extends machine {
 
 
     //using access modifiers
-    private boolean isOn;
     private String modelNumber;
 
     //printer Constructor (not default)
     public printer(boolean isOn,String modelNumber){
-
-        this.isOn = isOn;
+        super(isOn);
         this.modelNumber = modelNumber;
     }
 
