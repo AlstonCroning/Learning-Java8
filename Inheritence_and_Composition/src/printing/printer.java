@@ -5,9 +5,10 @@ package printing;
  */
 public class printer extends machine {
 
-
     //using access modifiers
     private String modelNumber;
+    private paperTray paperTray = new paperTray();
+
 
     //printer Constructor (not default)
     public printer(boolean isOn,String modelNumber){
@@ -15,7 +16,7 @@ public class printer extends machine {
         this.modelNumber = modelNumber;
     }
 
-    //prints copies
+    //prints number of copies given by the user
     public void print(int copies)
     {
         String onStatus = "";
@@ -28,14 +29,19 @@ public class printer extends machine {
         String textToPrint = modelNumber + onStatus;
 
         //using while loop
-        while(copies > 0)
+        while(copies > 0 && !paperTray.isEmpty())
         {
             System.out.println(textToPrint);
             copies--;
+            paperTray.usePage();
+        }
+
+        if(paperTray.isEmpty()){
+            System.out.println("Load More Papers...");
         }
     }
 
-    //prints color names of an array
+    //prints names of colors of an array
     public void printColors()
     {
         //colors array
@@ -49,10 +55,9 @@ public class printer extends machine {
                 //break;
             System.out.println(currentColor);
         }
-
     }
 
-    //prints text
+    //prints User Entered Text
     private void print(String text)
     {
         System.out.println(text);//print the text
@@ -63,5 +68,10 @@ public class printer extends machine {
     {
         return modelNumber;//return value
     }
+
+    public void loadPaper(int count){
+        paperTray.addPaper(count);
+    }
+
 
 }

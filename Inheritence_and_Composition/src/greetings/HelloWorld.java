@@ -13,8 +13,8 @@ public class HelloWorld {
     {
         printer myPrinter = new printer(true,"MY PRINTER");
 
-        myPrinter.print(1);
-        myPrinter.turnOff();
-        myPrinter.print(1);
+        myPrinter.loadPaper(3);
+        myPrinter.print(4);
+
     }
 }
